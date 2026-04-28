@@ -46,20 +46,20 @@ jobs:
       - name: actualiza servicio1
         run: |
           aws ecs update-service \
-          --cluster \cluster
-          --service servicio1-task-service-wkg4nh73 \
-          --force-new-deployment
+            --cluster mi-cluster-ecs \
+            --service servicio1-task-service-wkg4nh73 \
+            --force-new-deployment
 
       - name: actualiza servicio2
         run: |
           aws ecs update-service \
-          --cluster \cluster
-          --service servicio2-task-service-c3tt28hr \
-          --force-new-deployment
+            --cluster mi-cluster-ecs \
+            --service servicio2-task-service-c3tt28hr \
+            --force-new-deployment
 
       - name: actualiza servicio3
         run: |
           aws ecs update-service \
-          --cluster \cluster
-          --service servicio3-task-service-4i608pj7 \
-          --force-new-deployment
+            --cluster mi-cluster-ecs \
+            --service servicio3-task-service-4i608pj7 \
+            --force-new-deployment
